@@ -4,6 +4,13 @@ namespace DividedNumber;
 
 public class DividedNumberNames
 {
+    /// <summary>
+    /// Checks if provided numbers can be divided by numbers from 1 up to the provided limit
+    /// </summary>
+    /// <param name="limit">Accepts number from 1 to int max value</param>
+    /// <param name="numberNames">Accepts pairs where key greater than 0 and value not null, empty or whitespace</param>
+    /// <param name="wrileResultLine">Calls each number iteration with the string result</param>
+    /// <exception cref="ArgumentException"></exception>
     public void WriteDividedNumberNames(int limit, Dictionary<int, string> numberNames, Action<string> wrileResultLine)
     {
         var limitInvalid = limit < 1;
